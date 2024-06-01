@@ -4,7 +4,7 @@ import ollama
 
 
 def get_response(input_str):
-    response = ollama.chat("gemma", messages=[{
+    response = ollama.chat("llama3", messages=[{
         'role': 'user',
         'content': input_str,
     }])
